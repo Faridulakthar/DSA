@@ -8,17 +8,17 @@ Each problem is kept in a separate file under the `problems/` directory for easy
 
 ## 📁 Project Structure
 
+```bash
 dsa/
 ├── package.json
 ├── tsconfig.json
 ├── README.md
 └── problems/
-├── findSecondLargest.ts
-├── reverseString.ts
-├── twoSum.ts
-├── isPalindrome.ts
-└── ...
-
+    ├── findSecondLargest.ts
+    ├── reverseString.ts
+    ├── twoSum.ts
+    ├── isPalindrome.ts
+    └── ...
 
 ---
 
