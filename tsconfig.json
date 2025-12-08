@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    /* ===========================
+       File structure
+    =========================== */
+    "rootDir": "./problems",       // all your .ts files
+    "outDir": "./dist",            // compiled JS output
+
+    /* ===========================
+       Environment
+    =========================== */
+    "module": "CommonJS",          // use CommonJS for Node
+    "target": "ES2020",            // modern JS target
+    "lib": ["ES2020"],
+    "types": ["node"],             // include Node.js type definitions
+
+    /* ===========================
+       Output helpers
+    =========================== */
+    "sourceMap": true,
+    "declaration": false,          // no need for .d.ts files for DSA
+    "declarationMap": false,
+
+    /* ===========================
+       Type checking
+    =========================== */
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    "skipLibCheck": true,
+
+    /* ===========================
+       Module resolution
+    =========================== */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+
+    /* ===========================
+       Misc
+    =========================== */
+    "isolatedModules": false
+  },
+  "include": ["problems/**/*.ts"]
+}
