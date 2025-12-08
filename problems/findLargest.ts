@@ -1,8 +1,12 @@
-export {}
+export {};
 
 // Find largest number in an array
 
 function findLargest(arr: number[]): number {
+  if (arr.length < 2) {
+    throw new Error("Array must contain at least two elements");
+  }
+
   let largest = -Infinity;
 
   for (let i = 0; i < arr.length; i++) {
