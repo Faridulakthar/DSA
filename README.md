@@ -28,3 +28,8 @@ dsa/
 
    ```bash
    npm install
+
+2. **cd problems**
+
+    ```bash
+    npx ts-node findLargest.ts
