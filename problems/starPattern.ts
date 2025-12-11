@@ -54,3 +54,17 @@ for (let i = 0; i < e; i++) {
 
   console.log(row);
 }
+
+// steps to print right angled triangle opposite star pattern
+let f: number = 5;
+for (let i = 0; i < f; i++) {
+  let row: string = "";
+  for (let j = 0; j < f - (i + 1); j++) {
+    row = row + " ";
+  }
+  for (let k = 0; k < i + 1; k++) {
+    row = row + "*";
+  }
+
+  console.log(row);
+}
