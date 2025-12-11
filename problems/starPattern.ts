@@ -71,7 +71,7 @@ for (let i = 0; i < f; i++) {
   console.log(row);
 }
 
-// steps to print right angled triangle opposite star pattern
+// steps to print right angled triangle toggle number pattern
 let g: number = 5;
 for (let i = 0; i < g; i++) {
   let row: string = "";
