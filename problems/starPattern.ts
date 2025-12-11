@@ -59,9 +59,11 @@ for (let i = 0; i < e; i++) {
 let f: number = 5;
 for (let i = 0; i < f; i++) {
   let row: string = "";
+  //   j loop fo adding emptyl spaces
   for (let j = 0; j < f - (i + 1); j++) {
     row = row + " ";
   }
+  //   k loop for adding stars
   for (let k = 0; k < i + 1; k++) {
     row = row + "*";
   }
