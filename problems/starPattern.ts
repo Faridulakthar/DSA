@@ -43,3 +43,14 @@ for (let i = 0; i < d; i++) {
 
   console.log(row);
 }
+
+// steps to print right angled triangle down same number pattern
+let e: number = 5;
+for (let i = 0; i < e; i++) {
+  let row: string = "";
+  for (let j = 0; j < e - i; j++) {
+    row = row + (j + 1) + " ";
+  }
+
+  console.log(row);
+}
