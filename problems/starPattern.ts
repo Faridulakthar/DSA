@@ -70,3 +70,22 @@ for (let i = 0; i < f; i++) {
 
   console.log(row);
 }
+
+// steps to print right angled triangle opposite star pattern
+let g: number = 5;
+for (let i = 0; i < g; i++) {
+  let row: string = "";
+  let type: number = 1;
+
+  for (let j = 0; j < i + 1; j++) {
+    row = row + type;
+
+    if (type === 1) {
+      type = 0;
+    } else {
+      type = 1;
+    }
+  }
+
+  console.log(row);
+}
