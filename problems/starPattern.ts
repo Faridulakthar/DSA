@@ -22,13 +22,23 @@ for (let i = 0; i < b; i++) {
   console.log(row);
 }
 
-
 // steps to print right angled triangle number pattern
 let c: number = 5;
 for (let i = 0; i < c; i++) {
   let row: string = "";
   for (let j = 0; j <= i; j++) {
     row = row + (j + 1) + " ";
+  }
+
+  console.log(row);
+}
+
+// steps to print right angled triangle same number pattern
+let d: number = 5;
+for (let i = 0; i < d; i++) {
+  let row: string = "";
+  for (let j = 0; j < i + 1; j++) {
+    row = row + (i + 1) + " ";
   }
 
   console.log(row);
