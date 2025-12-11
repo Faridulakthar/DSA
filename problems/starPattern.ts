@@ -75,15 +75,15 @@ for (let i = 0; i < f; i++) {
 let g: number = 5;
 for (let i = 0; i < g; i++) {
   let row: string = "";
-  let type: number = 1;
+  let toggle: number = 1;
 
   for (let j = 0; j < i + 1; j++) {
-    row = row + type;
+    row = row + toggle;
 
-    if (type === 1) {
-      type = 0;
+    if (toggle === 1) {
+      toggle = 0;
     } else {
-      type = 1;
+      toggle = 1;
     }
   }
 
