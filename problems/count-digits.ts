@@ -4,6 +4,9 @@ function countDigits(num: number): number {
   if (num === 0) {
     return 1;
   }
+
+  num = Math.abs(num); // Handle negative numbers
+
   let count: number = 0;
   while (num > 0) {
     count++;
