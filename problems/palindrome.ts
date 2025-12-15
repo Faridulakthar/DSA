@@ -10,11 +10,7 @@ function isPalindrome(num: number): boolean {
     num = Math.floor(num / 10);
   }
 
-  if (rev === original) {
-    return true;
-  } else {
-    return false;
-  }
+  return rev === original;
 }
 
 const number = 12421;
