@@ -12,6 +12,10 @@ function reverse(x: number): number {
     x = Math.floor(x / 10);
   }
 
+  // check for 32 bit signed integer overflow for leetcode compatibility
+  let limit = Math.pow(2, 31);
+  if (rev < -limit || rev > limit) return 0;
+
   return original < 0 ? -rev : rev;
 }
 const testNumber: number = -12345;
