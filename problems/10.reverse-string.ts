@@ -5,7 +5,8 @@ function reverseString(s: string[]): void {
   let halfLen = Math.floor(len / 2);
 
   for (let i = 0; i < halfLen; i++) {
-    // Swapping
+    // swap (i, len - 1 - i)
+    // Swapping using a temporary variable so that we don't lose any value
     let temp = s[i];
     s[i] = s[len - 1 - i]!;
     s[len - 1 - i] = temp!;
