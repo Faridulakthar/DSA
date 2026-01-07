@@ -4,12 +4,11 @@ export {};
 
 function removeDuplicates(nums: number[]): number {
   let x = 0;
-  let a = nums;
 
   for (let i = 0; i < nums.length; i++) {
-    if (a[i]! > a[x]!) {
+    if (nums[i]! > nums[x]!) {
       x = x + 1;
-      a[x] = a[i]!;
+      nums[x] = nums[i]!;
     }
   }
   return x + 1;
