@@ -14,6 +14,7 @@ function findMaxConsecutiveOnes(nums: number[]): number {
     }
   }
 
+  // Math.max methoed is used to check which is larger between currentCount and maxCount
   return Math.max(currentCount, maxCount);
 }
 
