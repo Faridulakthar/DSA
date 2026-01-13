@@ -18,6 +18,6 @@ function findMaxConsecutiveOnes(nums: number[]): number {
   return Math.max(currentCount, maxCount);
 }
 
-const newArr = [1, 1, 0, 1, 1, 1];
-const maxConsecutiveOnes = findMaxConsecutiveOnes(newArr);
+const numbers = [1, 1, 0, 1, 1, 1];
+const maxConsecutiveOnes = findMaxConsecutiveOnes(numbers);
 console.log("Maximum consecutive ones:", maxConsecutiveOnes);
