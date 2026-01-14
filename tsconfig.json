@@ -39,7 +39,9 @@
     /* ===========================
        Misc
     =========================== */
-    "isolatedModules": false
+   //  "isolatedModules": false
+    "isolatedModules": true
+
   },
   "include": ["problems/**/*.ts"]
 }
