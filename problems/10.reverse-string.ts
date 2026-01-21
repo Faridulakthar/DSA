@@ -1,3 +1,5 @@
+// 10. Reverse String
+// npx ts-node 10.reverse-string.ts
 // Reverse String
 
 function reverseString(s: string[]): void {
