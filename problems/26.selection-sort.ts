@@ -17,9 +17,11 @@ function selectionSort(arr: number[]): number[] {
     }
 
     // Swap the found minimum element with the first element
-    const temp = arr[i];
-    arr[i] = arr[minIndex]!;
-    arr[minIndex] = temp!;
+    if (minIndex !== i) {
+      const temp = arr[i];
+      arr[i] = arr[minIndex]!;
+      arr[minIndex] = temp!;
+    }
   }
 
   return arr;
