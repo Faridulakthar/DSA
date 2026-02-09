@@ -24,7 +24,8 @@ var reverseList = function (head: ListNode | null): ListNode | null {
     prev = current;
     current = temp;
   }
-  return prev;
+  head = prev;
+  return head;
 };
 
 // Example usage:
