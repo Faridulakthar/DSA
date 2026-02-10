@@ -14,19 +14,34 @@ class ListNode {
 }
 
 const hasCycle = function (head: ListNode | null): boolean {
-  let nodes = new Set();
+  // if the head is null, there is no cycle in the linked list
+  if (!head) return false;
 
-  let current = head;
+//   useing JS Hash map method
+//   let nodes = new Set();
+//   let current = head;
+//   while (current !== null) {
+//       if (nodes.has(current)) {
+//           return true
+//       }
+//       nodes.add(current);
+//       current = current.next;
+//   }
+//   return false
 
-  while (current !== null) {
-    if (nodes.has(current)) {
-      return true;
+  // using Floyd's Algorithm;
+  let slow = head;
+  let fast = head.next;
+
+  while (slow != fast) {
+    if (fast == null || fast.next == null) {
+      return false;
     }
-    nodes.add(current);
-    current = current.next;
-  }
 
-  return false;
+    slow = slow.next!;
+    fast = fast.next.next;
+  }
+  return true;
 };
 
 // Example usage:
