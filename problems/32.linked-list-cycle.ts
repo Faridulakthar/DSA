@@ -29,7 +29,6 @@ const hasCycle = function (head: ListNode | null): boolean {
   return false;
 };
 
-
 // Example usage:
 const head = new ListNode(1);
 head.next = new ListNode(2);
