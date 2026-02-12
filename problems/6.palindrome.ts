@@ -1,4 +1,7 @@
-// write a. function to check whether a string is palindrome or not
+// 6. Palindrome Number
+// npx ts-node 6.palindrome.ts
+
+export {};
 
 function isPalindrome(num: number): boolean {
   let rev = 0;
@@ -10,7 +13,7 @@ function isPalindrome(num: number): boolean {
     num = Math.floor(num / 10);
   }
 
-  return rev === original;
+  return rev === num;
 }
 
 const number = 12421;
