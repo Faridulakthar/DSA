@@ -13,36 +13,66 @@ class ListNode {
   }
 }
 
-var removeNthFromEnd = function (
+// Two pass approach: First pass to find the length of the list, second pass to find the node to remove.
+// const removeNthFromEnd = function (
+//   head: ListNode | null,
+//   n: number,
+// ): ListNode | null {
+//   let sentinel = new ListNode(0);
+//   sentinel.next = head;
+
+//   // Finding lenght of the list
+//   let length = 0;
+//   while (head) {
+//     head = head.next;
+//     length++;
+//   }
+
+//   // find the prev position;
+//   let prevPosition = length - n;
+
+//   let prev = sentinel;
+
+//   for (let i = 0; i < prevPosition; i++) {
+//     prev = prev.next!;
+//   }
+
+//   if (prev.next) {
+//     prev.next = prev.next.next;
+//   }
+
+//   return sentinel.next;
+// };
+
+// one pass approach: Using two pointers, we can find the node to remove in one pass. --- IGNORE ---
+
+const removeNthFromEnd = function (
   head: ListNode | null,
   n: number,
 ): ListNode | null {
   let sentinel = new ListNode(0);
   sentinel.next = head;
 
-  // Finding lenght of the list
-  let length = 0;
-  while (head) {
-    head = head.next;
-    length++;
+  // move my first pointer ahead by n
+  let first = sentinel;
+  for (let i = 0; i < n; i++) {
+    first = first.next!;
   }
 
-  // find the prev position;
-  let prevPosition = length - n;
-
-  let prev = sentinel;
-
-  for (let i = 0; i < prevPosition; i++) {
-    prev = prev.next!;
+  // move both pointers untill the first pointer reaches the last node
+  let second = sentinel;
+  while (first.next) {
+    second = second.next!;
+    first = first.next;
   }
 
-  if (prev.next) {
-    prev.next = prev.next.next;
+  if (second.next) {
+    // delete the second.next
+    second.next = second.next.next!;
   }
 
   return sentinel.next;
 };
-
 
 // Example usage:
 const head = new ListNode(1);
