@@ -45,7 +45,6 @@ class ListNode {
 // };
 
 // one pass approach: Using two pointers, we can find the node to remove in one pass. --- IGNORE ---
-
 const removeNthFromEnd = function (
   head: ListNode | null,
   n: number,
