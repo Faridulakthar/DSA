@@ -21,6 +21,7 @@ const addTwoNumbers = function (
   let ansHead = ans;
   let carry = 0;
 
+  //   we will iterate through both linked lists until we reach the end of both lists and there is no carry left. At each step, we will calculate the sum of the current digits and the carry, and create a new node with the digit value of the sum. We will also update the carry for the next iteration.
   while (l1 || l2 || carry) {
     let sum = (!l1 ? 0 : l1.val) + (!l2 ? 0 : l2.val) + carry;
     carry = Math.floor(sum / 10);
